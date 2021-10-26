@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/Users/samirsim/Desktop/ns-wifi/ns-3.33/./waf", line 169, in <module>
+    from waflib import Scripting
+  File "/Users/samirsim/Desktop/ns-wifi/ns-3.33/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Scripting.py", line 7, in <module>
+    from waflib import Utils,Configure,Logs,Options,ConfigSet,Context,Errors,Build,Node
+  File "/Users/samirsim/Desktop/ns-wifi/ns-3.33/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Configure.py", line 6, in <module>
+    from waflib import ConfigSet,Utils,Options,Logs,Context,Build,Errors
+  File "/Users/samirsim/Desktop/ns-wifi/ns-3.33/.waf3-2.0.21-c6c9a875365426e5928462b9b74d40b5/waflib/Options.py", line 5, in <module>
+    import os,tempfile,optparse,sys,re
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 786, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 918, in get_code
+  File "<frozen importlib._bootstrap_external>", line 587, in _compile_bytecode
+KeyboardInterrupt

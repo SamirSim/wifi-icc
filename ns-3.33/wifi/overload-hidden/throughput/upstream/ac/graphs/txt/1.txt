@@ -1,0 +1,27 @@
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.466s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+[1991/2036] Compiling scratch/scratch-simulator.cc
+[1998/2036] Linking build/scratch/scratch-simulator
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.566s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.404s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+[1980/2036] Compiling scratch/scratch-simulator.cc
+[1998/2036] Linking build/scratch/scratch-simulator
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.254s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+[1979/2036] Compiling scratch/scratch-simulator.cc
+[1998/2036] Linking build/scratch/scratch-simulator
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (2.235s)
+1.99956

@@ -1,0 +1,2 @@
++1.000000000s 14 UdpEchoClientApplication:Send(): At time +1s client sent 1023 bytes to 10.0.0.1 port 11
++1.004468000s 13 UdpEchoServerApplication:HandleRead(): At time +1.00447s server received 1023 bytes from 10.0.0.15 port 49153

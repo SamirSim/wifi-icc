@@ -1,0 +1,21 @@
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.527s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.564s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.428s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.429s)
+Waf: Entering directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Waf: Leaving directory `/Users/samirsim/Desktop/ns-allinone-3.33/ns-3.33/build'
+Build commands will be stored in build/compile_commands.json
+'build' finished successfully (0.426s)
+29.659
