@@ -404,7 +404,7 @@ int main (int argc, char *argv[]) {
   AsciiTraceHelper ascii;
 
   phy.SetPcapDataLinkType (WifiPhyHelper::DLT_IEEE802_11_RADIO);
-  std::string s = "pkt/"+std::to_string(nWifi)+"-"+period+"-"+std::to_string(MCS)+"-"+std::to_string(payloadSize);
+  std::string s = "telemetry-23Bytes/"+std::to_string(nWifi)+"-"+period+"-"+std::to_string(MCS)+"-"+std::to_string(payloadSize);
   phy.EnableAsciiAll (ascii.CreateFileStream(s+".tr"));
   phy.EnablePcap (s+".pcap", apDevice.Get(0), false, true);
 

@@ -1,4 +1,4 @@
- #include "ns3/command-line.h"
+#include "ns3/command-line.h"
 #include "ns3/config.h"
 #include "ns3/uinteger.h"
 #include "ns3/boolean.h"
@@ -395,8 +395,8 @@ int main (int argc, char *argv[]) {
 
   phy.SetPcapDataLinkType (WifiPhyHelper::DLT_IEEE802_11_RADIO);
   std::string s = "latency/"+std::to_string(nWifi)+"-"+dataRate+"-"+std::to_string(MCS)+"-"+std::to_string(payloadSize);
-  phy.EnableAsciiAll (ascii.CreateFileStream(s+".tr"));
-  phy.EnablePcap (s+".pcap", apDevice.Get(0), false, true);
+  //phy.EnableAsciiAll (ascii.CreateFileStream(s+".tr"));
+  //phy.EnablePcap (s+".pcap", apDevice.Get(0), false, true);
 
   Simulator::Stop (Seconds (simulationTime + 2));
   Simulator::Run ();
