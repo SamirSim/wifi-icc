@@ -3,16 +3,16 @@ declare -a MCS=9
 declare -a txPower=9 #dBm
 declare -a trafficDirection="upstream" 
 declare -a simulationTime="3600" # Seconds
-declare -a payloadSize="22" # Bytes, for all the packet (+ 12 Header)
-declare -a period="60" # Seconds between packets
+declare -a payloadSize="35" # Bytes, for all the packet (+ 12 Header)
+declare -a period="3600" # Seconds between packets
 declare -a nWifi=1 # Number of end-devices
 
 declare -a latency=0 # Latency in boxplots
-declare -a energyPower=1 # Energy Power consumption of one device in Watts
+declare -a energyPower=0 # Energy Power consumption of one device in Watts
 declare -a energyRatio=1 # Energy Ratio consumption of one device in Joules/Byte
 declare -a crossFactor=0 # Consider cross-factor or not
 declare -a batteryRV=0 # Use the RV Model battery
-declare -a successRate=1 # Packets (Layer 3) success rate percentage %
+declare -a successRate=0 # Packets (Layer 3) success rate percentage %
 
 declare -a hiddenStations=0 # If hidden nodes are allowed or not (50%)
 
@@ -24,14 +24,14 @@ declare -a nbTxPackets=0 # Number of sent packets by the sender
 declare -a successRateValue=0 # Success rate percentagek
 declare -a string="" # Buffer string
 
-mkdir -p "telemetry"
-path="telemetry"
+mkdir -p "telemetry-23Bytes"
+path="telemetry-23Bytes"
 
 source venv/bin/activate
 
 for period in 360
 do
-    for payloadSize in 1012
+    for payloadSize in 35
     do
         for nWifi in $(seq $1 $step $2)
         do    

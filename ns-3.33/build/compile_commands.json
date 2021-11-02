@@ -4595,13 +4595,13 @@
     "file": "src/wimax/bindings/ns3module.cc"
   },
   {
-    "directory": "/Users/samirsim/Desktop/ns-wifi/ns-3.33/build",
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/scratch-simulator.cc -c -o/Users/samirsim/Desktop/ns-wifi/ns-3.33/build/scratch/scratch-simulator.cc.1.o",
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/scratch-simulator.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/scratch-simulator.cc.3.o",
     "file": "../scratch/scratch-simulator.cc"
   },
   {
-    "directory": "/Users/samirsim/Desktop/ns-wifi/ns-3.33/build",
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/subdir/scratch-simulator-subdir.cc -c -o/Users/samirsim/Desktop/ns-wifi/ns-3.33/build/scratch/subdir/scratch-simulator-subdir.cc.2.o",
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/subdir/scratch-simulator-subdir.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/subdir/scratch-simulator-subdir.cc.4.o",
     "file": "../scratch/subdir/scratch-simulator-subdir.cc"
   },
   {
@@ -4650,13 +4650,28 @@
     "file": "../scratch/final-model.cc"
   },
   {
-    "directory": "/Users/samirsim/Desktop/ns-wifi/ns-3.33/build",
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-periodic.cc -c -o/Users/samirsim/Desktop/ns-wifi/ns-3.33/build/scratch/script-periodic.cc.4.o",
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-periodic.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/script-periodic.cc.4.o",
     "file": "../scratch/script-periodic.cc"
   },
   {
-    "directory": "/Users/samirsim/Desktop/ns-wifi/ns-3.33/build",
-    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-stochastic.cc -c -o/Users/samirsim/Desktop/ns-wifi/ns-3.33/build/scratch/script-stochastic.cc.3.o",
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-stochastic.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/script-stochastic.cc.4.o",
     "file": "../scratch/script-stochastic.cc"
+  },
+  {
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/test-vbr.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/test-vbr.cc.3.o",
+    "file": "../scratch/test-vbr.cc"
+  },
+  {
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-cbr.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/script-cbr.cc.1.o",
+    "file": "../scratch/script-cbr.cc"
+  },
+  {
+    "directory": "/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build",
+    "command": "/usr/bin/clang++ -O0 -ggdb -g3 -Wall -Wno-unused-local-typedefs -Wno-potentially-evaluated-expression -std=c++11 -I. -DNS3_BUILD_PROFILE_DEBUG -DNS3_ASSERT_ENABLE -DNS3_LOG_ENABLE -DHAVE_SYS_IOCTL_H=1 -DHAVE_IF_NETS_H=1 -DHAVE_NET_ETHERNET_H=1 -DHAVE_SQLITE3=1 -DHAVE_SEMAPHORE_H=1 ../scratch/script-vbr.cc -c -o/Users/samirsim/Desktop/Wi-Fi/wifi-icc/ns-3.33/build/scratch/script-vbr.cc.2.o",
+    "file": "../scratch/script-vbr.cc"
   }
 ]
