@@ -35,7 +35,7 @@ double totalBytes = 0; // To compute success rate
 
 std::list<double> sizes; // List containing frame sizes
 
-NS_LOG_COMPONENT_DEFINE ("test-vbr");
+NS_LOG_COMPONENT_DEFINE ("script-vbr");
 
 static void GenerateTraffic (Ptr<Socket> socket, uint32_t pktSize,
 							uint32_t pktCount, Time pktInterval, int index ) {
@@ -45,9 +45,11 @@ static void GenerateTraffic (Ptr<Socket> socket, uint32_t pktSize,
 		pktSize = *it;
 
 		//pktSize = 60000;
-		pktSize = pktSize * 1; // *3 for 5 Mbps, *2.25 for 8 Mbps
+		pktSize = pktSize * 1; // *3 for 5 Mbps, *6.25 for 8 Mbps
 
-		if (pktSize > 60000) pktSize = 60000;
+		std::cout << pktSize << std::endl;
+
+		//if (pktSize > 60000) pktSize = 60000;
 
 		socket->Send (Create<Packet> (pktSize));
 		
@@ -63,15 +65,15 @@ static void GenerateTraffic (Ptr<Socket> socket, uint32_t pktSize,
 
 int main (int argc, char *argv[]) {
   SeedManager::SetSeed (3);  // Changes seed from default of 1 to 3
-  SeedManager::SetRun (1);  // Changes run number from default of 1 to 7
-  double simulationTime = 500; // Seconds
-  uint32_t nWifi = 1; // Number of stations
+  SeedManager::SetRun (5);  // Changes run number from default of 1 to 5
+  double simulationTime = 50; // Seconds
+  uint32_t nWifi = 10; // Number of stations
   uint32_t MCS = 6; // Number of stations
   uint32_t txPower = 9; // Number of stations
   std::string trafficDirection = "upstream";
-  uint32_t payloadSize = 0; // Dummy variable; 
-  double period = 0.04; // FPS is considered constant (25s)
-  std::string traceFile = "2Mbps.txt"; // Video trace file for stochastic traffic
+  uint32_t payloadSize = 1024; // Dummy variable; 
+  double period = 0.033; // FPS is considered constant (25)
+  std::string traceFile = "8Mbps.txt"; // Video trace file for stochastic traffic
   std::string dataRate = "2";
 
   bool latency = false;
@@ -119,6 +121,8 @@ int main (int argc, char *argv[]) {
   LogComponentEnableAll (LOG_PREFIX_FUNC);
   LogComponentEnableAll (LOG_PREFIX_NODE);
   LogComponentEnableAll (LOG_PREFIX_TIME);
+
+  traceFile = dataRate+"Mbps.txt";
 
   CsvReader csv (traceFile);
 
@@ -408,8 +412,8 @@ int main (int argc, char *argv[]) {
 
   phy.SetPcapDataLinkType (WifiPhyHelper::DLT_IEEE802_11_RADIO);
   std::string s = "vbr/"+std::to_string(nWifi)+"-"+dataRate+"-"+std::to_string(MCS)+"-"+std::to_string(payloadSize);
-  phy.EnableAsciiAll (ascii.CreateFileStream(s+".tr"));
-  phy.EnablePcap (s+".pcap", apDevice.Get(0), false, true);
+  //phy.EnableAsciiAll (ascii.CreateFileStream(s+".tr"));
+  //phy.EnablePcap (s+".pcap", apDevice.Get(0), false, true);
 
   Simulator::Stop (Seconds (simulationTime));
   Simulator::Run ();
@@ -427,7 +431,7 @@ int main (int argc, char *argv[]) {
 
   double totalPacketsThrough = 0, throughput = 0;
   if (trafficDirection == "upstream") {
-	totalPacketsThrough = DynamicCast<PacketSink> (sinkApplications.Get (0))->GetTotalRx ();
+	totalPacketsThrough = DynamicCast<PacketSink> (sinkApplications.Get (0))->GetTotalRx (); // Number of Bytes
 	if (successRate) std::cout << "Success rate: " << (totalPacketsThrough/totalBytes) * 100 << std::endl;
 	throughput += ((totalPacketsThrough * 8) / ((simulationTime) * 1024 * 1024)); //Mbit/s
 	std::cout << "Throughput: " << throughput << std::endl;
@@ -440,7 +444,7 @@ int main (int argc, char *argv[]) {
   }
 
   double totalSentPackets = ((1/period) * simulationTime ) * nWifi; // Estimation of number of generated packets in the network
-  double totalReceivedPackets = totalPacketsThrough / payloadSize; // Number of total received packets
+  //double totalReceivedPackets = totalPacketsThrough / payloadSize; // Number of total received packets
 
   if (energyRatio) {
 	double receivedByteStation = totalPacketsThrough / nWifi; // Number of successfuly received bytes from one station
